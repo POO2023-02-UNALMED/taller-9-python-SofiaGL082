@@ -13,6 +13,7 @@ pantalla.grid(row=0, column=0, columnspan=4, padx=1, pady=1)
 
 #Indice de numeros
 i = 0
+operadores = 0
 
 #Configuracion para entrada de numeros
 def obtenerNumeros(n):
@@ -23,8 +24,14 @@ def obtenerNumeros(n):
 # Configuracion entrada de botones de operacion
 def obtenerOperador(operador):
     global i
-    pantalla.insert(i, operador)
-    i+=1
+    global operadores
+    if operadores == 0:
+        pantalla.insert(i, operador)
+        i+=1
+        operadores+=1
+    else:
+        clear_pantalla()
+        pantalla.insert(0, "ERROR")
 
 # Limpiar pantalla
 def clear_pantalla():
