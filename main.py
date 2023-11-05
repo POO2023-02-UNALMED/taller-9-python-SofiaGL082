@@ -1,4 +1,5 @@
 from tkinter import END, Tk, Button, Entry
+#Commit para calificacion?
 
 # Configuración ventana principal
 root = Tk()
