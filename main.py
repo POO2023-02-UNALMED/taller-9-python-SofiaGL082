@@ -73,7 +73,7 @@ boton_9 = Button(root, text="9", command= lambda:obtenerNumeros(9), width=9, hei
 
 # Botones operaciones
 boton_igual = Button(root, text="=", command= lambda:calcularOperacion(), width=20, height=3, bg="red", fg="white", borderwidth=0, cursor=" hand2").grid(row=4, column=0, columnspan=2, padx=1, pady=1)
-boton_punto = Button(root, text=".", command= lambda:obtenerOperador("."), width=9, height=3, bg="spring green", fg="black", cursor="hand2", borderwidth=0).grid(row=4, column=2, padx=1, pady=1)
+boton_punto = Button(root, text=".", command= lambda:obtenerNumeros("."), width=9, height=3, bg="spring green", fg="black", cursor="hand2", borderwidth=0).grid(row=4, column=2, padx=1, pady=1)
 boton_mas = Button(root, text="+", command= lambda:obtenerOperador("+"), width=9, height=3, bg="deep sky blue", fg="black", borderwidth=0, cursor="hand2").grid(row=1, column=3, padx=1, pady=1)
 boton_menos = Button(root, text="-", command= lambda:obtenerOperador("-"), width=9, height=3, bg="deep sky blue", fg="black", borderwidth=0, cursor="hand2").grid(row=2, column=3, padx=1, pady=1)
 boton_multiplicacion = Button(root, text="*", command= lambda:obtenerOperador("*"),  width=9, height=3, bg="deep sky blue", fg="black", borderwidth=0, cursor="hand2").grid(row=3, column=3, padx=1, pady=1)
